@@ -1,78 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/assets/logo-vt.svg" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Login Page</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-  </head>
-  <body class="bg-info d-flex justify-content-center align-items-center vh-100">
-    <div class="bg-white p-5 rounded-5 text-secondary shadow" style="width: 25rem">
-      <div class="d-flex justify-content-center">
-        <img
-          src="img/login-icon.svg"
-          alt="login-icon"
-          style="height: 7rem"
-        />
-      </div>
-      <div class="text-center fs-1 fw-bold">Login</div>
-      <div class="input-group mt-4">
-       
-        <input
-          class="form-control bg-light"
-          type="text"
-          placeholder="Username"
-        />
-      </div>
-      <div class="input-group mt-1">
-       
-        <input
-          class="form-control bg-light"
-          type="password"
-          placeholder="Password"
-        />
-      </div>
-      <div class="d-flex justify-content-around mt-1">
-        <div class="d-flex align-items-center gap-1">
-          <input class="form-check-input" type="checkbox" />
-          <div class="pt-1" style="font-size: 0.9rem">Estoy De Acuerdo</div>
+<head>
+  
+    <title>NICAAP AGENCY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="js/login.js"></script>
+</head>
+<body class="bg- d-flex justify-content-around align-items-center vh-100">
+    <div class="login">
+    <div class="bg-white p-5  rounded-5" style="width: 25rem;">
+        <div class="d-flex justify-content-center">
+            <img src="img/Imagen de WhatsApp 2023-07-17 a las 23.21.21.jpg" alt="login-icon"
+            style="height: 7rem;">
         </div>
-        <div class="pt-1">
-          <a
-            href="#"
-            class="text-decoration-none text-info fw-semibold fst-italic"
-            style="font-size: 0.9rem"
-            >Olvidastes tu contraseña?</a
-          >
+       <div class="text-center fs-1 fw-bold text-"><h1>Inicio de sesion</h1></div>
+        <form method="post">
+            <div class="username">
+                <div class="text-center fw-bold">Nombre: nicaap</div>
+                <input class="form-control"type="text" name="usuario" id="usuar" placeholder="Ingresar Usuario">
+            </div>
+            <div class="contraseña">
+                <div class="text-center fw-bold">Contraseña:123</div>
+                <input class="form-control" type="password" name="contraseña" id="password" placeholder="Contraseña">
+            </div >
+            <br>
+            <div class="d-flex justify-content-center">
+                <button type="button" value="login" id="sumbit" onclick="validate()" class="btn btn-primary">Iniciar Sesión</button>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+            <a href="#">¿Olvidastes Tu Contraseña?</a>
+            <hr>
+            </div>
+            <div class="d-flex justify-content-center">
+               <a href="formulario.html"><button type="button"  class="btn btn-warning">Crear Cuenta Nueva</button></a> 
+            </div>
         </div>
-      </div>
-      <a href="formulario.html"><div class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm">
-        Login
-      </div></a>
-      
-      <div class="d-flex gap-1 justify-content-center mt-1">
-        <div>No tienes una cuenta?....</div>
-        <a href="#" class="text-decoration-none text-info fw-semibold"
-          >Registrese</a
-        >
-      </div>
-      <div class="p-3">
-        <div class="border-bottom text-center" style="height: 0.9rem">
-          <span class="bg-white px-3">o</span>
-        </div>
-      </div>
-      <div
-        class="btn d-flex gap-2 justify-content-center border mt-3 shadow-sm"
-      >
-        <img
-          src="img/google-icon.svg"
-          alt="google-icon"
-          style="height: 1.6rem"
-        />
-        <div class="fw-semibold text-secondary">Continue with Google</div>
-      </div>
+        </form>
+
     </div>
-  </body>
+</body>
 </html>
